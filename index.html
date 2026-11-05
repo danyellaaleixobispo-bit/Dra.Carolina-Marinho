@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Carolina Marinho · Harmonização Orofacial</title>
+<meta name="description" content="Dra. Carolina Marinho, cirurgiã-dentista. Harmonização Orofacial na Barra da Tijuca e em Nova Iguaçu. CRO-RJ 54256. Agende sua avaliação pelo WhatsApp.">
+<meta name="theme-color" content="#F7F5F0">
+<meta property="og:title" content="Dra. Carolina Marinho · Harmonização Orofacial">
+<meta property="og:description" content="Critério antes de procedimento — cada rosto, uma leitura própria.">
+<meta property="og:image" content="imagens/carolina.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23F7F5F0'/%3E%3Cpath d='M8 2 13 8 8 14 3 8Z' fill='%23C2A365'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  /* Paleta Ouro & Sálvia — guia de marca, seção 07 */
+  :root{
+    --alabastro:#F7F5F0;   /* base */
+    --nevoa:#E4E7DE;       /* superfície */
+    --tinta:#2C3730;       /* texto */
+    --salvia-escura:#5E6A5E;/* rótulo */
+    --ouro:#C2A365;        /* assinatura — nunca texto sobre fundo claro */
+    --salvia:#95A08C;      /* filete — nunca texto */
+    --serif:"Lora",Georgia,serif;
+    --sans:"Poppins",system-ui,-apple-system,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--alabastro);color:var(--tinta);font-family:var(--sans);font-weight:300;font-size:1rem;line-height:1.7}
+  img{max-width:100%;display:block}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2;margin:0}
+  p{margin:0 0 1em}
+  a{color:inherit}
+  .wrap{width:100%;max-width:960px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0}
+
+  /* Rótulo em versalete */
+  .rotulo{font-family:var(--sans);font-weight:500;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--salvia-escura);margin:0 0 14px}
+
+  /* Assinatura gráfica: losango sobre linha fina */
+  .assinatura{display:flex;align-items:center;gap:12px;margin:0 0 28px}
+  .assinatura::before,.assinatura::after{content:"";height:1px;width:36px;background:var(--salvia)}
+  .losango{width:9px;height:9px;background:var(--ouro);transform:rotate(45deg);flex:none}
+  .assinatura.centro{justify-content:center}
+  .divisor{display:flex;align-items:center;gap:14px;margin:18px 0 32px}
+  .divisor::before,.divisor::after{content:"";flex:1;height:1px;background:var(--salvia)}
+
+  /* Botões */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 28px;border-radius:999px;font-family:var(--sans);font-weight:500;font-size:.95rem;letter-spacing:.02em;text-decoration:none;background:var(--tinta);color:var(--alabastro);transition:opacity .2s}
+  .btn:hover{opacity:.88}
+  .btn:focus-visible,.whats-fixo:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn-claro{background:var(--alabastro);color:var(--tinta)}
+
+  /* 1. Topo */
+  .topo{padding:56px 0 72px;min-height:88vh;min-height:88svh;display:flex;align-items:center}
+  .topo h1{font-size:clamp(2.3rem,9vw,3.6rem);margin-bottom:12px}
+  .topo .frase{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,4.6vw,1.45rem);line-height:1.45;max-width:30ch;margin:20px 0 32px}
+  .topo .locais{font-size:.9rem;color:var(--salvia-escura);margin:18px 0 0}
+  .topo .cro{font-size:.82rem;color:var(--salvia-escura);margin-top:6px}
+
+  /* 2. Sobre */
+  .sobre{border-top:1px solid var(--salvia)}
+  .sobre-grid{display:grid;gap:36px}
+  .foto{background:var(--nevoa);aspect-ratio:4/5;overflow:hidden;max-width:420px}
+  .foto img{width:100%;height:100%;object-fit:cover}
+  h2{font-size:clamp(1.7rem,6.5vw,2.3rem)}
+  .sobre .cro-linha{font-size:.85rem;color:var(--salvia-escura);border-top:1px solid var(--salvia);padding-top:14px;margin-top:24px}
+
+  /* 3. Tratamentos */
+  .tratamentos{background:var(--nevoa)}
+  .lista-trat{list-style:none;margin:0;padding:0;display:grid;gap:0}
+  .lista-trat li{padding:22px 0;border-bottom:1px solid var(--salvia)}
+  .lista-trat li:first-child{border-top:1px solid var(--salvia)}
+  .lista-trat h3{font-size:1.2rem;margin-bottom:6px}
+  .lista-trat p{margin:0;font-size:.95rem}
+  .nota{font-size:.85rem;color:var(--salvia-escura);font-style:italic;margin-top:24px}
+
+  /* 4. Depoimentos */
+  .depo-grid{display:grid;gap:16px}
+  .depo{border:1px solid var(--salvia);padding:24px}
+  .depo blockquote{margin:0 0 12px;font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1.55}
+  .depo cite{font-style:normal;font-size:.82rem;color:var(--salvia-escura)}
+
+  /* 5. Onde atendo */
+  .onde{border-top:1px solid var(--salvia)}
+  .locais-grid{display:grid;gap:16px;margin-top:8px}
+  .local{background:var(--nevoa);padding:24px}
+  .local h3{font-size:1.3rem;margin-bottom:6px}
+  .local p{margin:0;font-size:.95rem}
+
+  /* 6. Fechamento */
+  .fechamento{background:var(--tinta);color:var(--alabastro);text-align:center;padding:72px 0}
+  .fechamento h2{margin-bottom:16px}
+  .fechamento p{max-width:34ch;margin:0 auto 32px}
+  .fechamento .cro{color:var(--ouro);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin:28px 0 0}
+
+  footer{background:var(--tinta);color:var(--alabastro);border-top:1px solid var(--salvia-escura);padding:28px 0 110px;font-size:.8rem;text-align:center}
+  footer p{margin:0 0 6px}
+  footer a{text-decoration:none;border-bottom:1px solid var(--salvia)}
+
+  /* Botão fixo de WhatsApp */
+  .whats-fixo{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:10;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 20px 0 16px;border-radius:999px;background:var(--tinta);color:var(--alabastro);text-decoration:none;font-weight:500;font-size:.9rem;box-shadow:0 6px 20px rgba(44,55,48,.25);border:1px solid var(--salvia-escura)}
+  .whats-fixo svg{width:24px;height:24px}
+
+  @media (min-width:720px){
+    section{padding:96px 0}
+    .sobre-grid{grid-template-columns:5fr 6fr;align-items:center;gap:56px}
+    .lista-trat{grid-template-columns:1fr 1fr;column-gap:48px}
+    .lista-trat li:nth-child(2){border-top:1px solid var(--salvia)}
+    .depo-grid,.locais-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    footer{padding-bottom:32px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- Ícone do WhatsApp reutilizado nos botões -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></symbol>
+</svg>
+
+<main>
+
+  <!-- 1. TOPO -->
+  <header class="topo">
+    <div class="wrap">
+      <div class="assinatura" aria-hidden="true"><span class="losango"></span></div>
+      <p class="rotulo">Cirurgiã-dentista · Harmonização Orofacial</p>
+      <h1>Dra. Carolina Marinho</h1>
+      <p class="frase">Critério antes de procedimento — cada rosto, uma leitura própria.</p>
+      <a class="btn" href="https://wa.me/5521969547637?text=Ol%C3%A1%2C%20Dra.%20Carolina!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-whats"/></svg>
+        Agendar avaliação pelo WhatsApp
+      </a>
+      <p class="locais">Atendimento na Barra da Tijuca e em Nova Iguaçu</p>
+      <p class="cro">CRO-RJ 54256</p>
+    </div>
+  </header>
+
+  <!-- 2. SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="wrap sobre-grid">
+      <figure class="foto" style="margin:0">
+        <!-- Troque pelo arquivo da foto em /imagens (formato retrato, 4:5, até ~200 KB) -->
+        <img src="imagens/carolina.jpg" alt="Dra. Carolina Marinho em seu consultório" width="800" height="1000" loading="lazy" decoding="async" onerror="this.style.display='none'">
+      </figure>
+      <div>
+        <p class="rotulo">Sobre</p>
+        <h2>Harmonia começa pela escuta</h2>
+        <div class="divisor" aria-hidden="true"><span class="losango"></span></div>
+        <p>Sou a Dra. Carolina Marinho, cirurgiã-dentista com atuação em Harmonização Orofacial. Meu trabalho começa antes de qualquer procedimento: na leitura das proporções, da musculatura e da história de cada rosto.</p>
+        <p>Na avaliação, explico com calma o que pode ser indicado para você — e também o que não é. Naturalidade, equilíbrio e segurança orientam cada decisão.</p>
+        <p class="cro-linha">Dra. Carolina Marinho · Cirurgiã-dentista · CRO-RJ 54256</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TRATAMENTOS -->
+  <section class="tratamentos" id="tratamentos">
+    <div class="wrap">
+      <p class="rotulo">Tratamentos</p>
+      <h2>O que pode ser avaliado</h2>
+      <div class="divisor" aria-hidden="true"><span class="losango"></span></div>
+      <ul class="lista-trat">
+        <li>
+          <h3>Toxina botulínica</h3>
+          <p>Atua na musculatura de expressão. Pontos e doses são definidos a partir da leitura do seu rosto em movimento.</p>
+        </li>
+        <li>
+          <h3>Preenchimento com ácido hialurônico</h3>
+          <p>Repõe volume e suporte em regiões específicas, respeitando as proporções individuais.</p>
+        </li>
+        <li>
+          <h3>Bioestimuladores de colágeno</h3>
+          <p>Estimulam a produção de colágeno do próprio organismo, de forma gradual.</p>
+        </li>
+        <li>
+          <h3>Fios de PDO</h3>
+          <p>Fios absorvíveis que oferecem suporte aos tecidos. A indicação depende das características de cada pele.</p>
+        </li>
+        <li>
+          <h3>Rinomodelação</h3>
+          <p>Abordagem sem cirurgia para ajustes de contorno do nariz, quando há indicação clínica.</p>
+        </li>
+        <li>
+          <h3>Tratamento de papada</h3>
+          <p>Abordagens para a região abaixo do queixo, avaliadas caso a caso.</p>
+        </li>
+      </ul>
+      <p class="nota">Cada tratamento é indicado somente após avaliação clínica individual. As respostas variam de pessoa para pessoa.</p>
+    </div>
+  </section>
+
+  <!-- 4. DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="wrap">
+      <p class="rotulo">Depoimentos</p>
+      <h2>Quem já passou pela avaliação</h2>
+      <div class="divisor" aria-hidden="true"><span class="losango"></span></div>
+      <div class="depo-grid">
+        <!--
+          COMO INSERIR UM DEPOIMENTO: copie o bloco abaixo, troque o texto e o nome.
+          Use apenas depoimentos autorizados por escrito, sem citar resultados
+          ou comparações (regras do CFO).
+        -->
+        <figure class="depo" style="margin:0">
+          <blockquote>[Depoimento 1 — insira o texto aqui]</blockquote>
+          <cite>— [Nome ou iniciais]</cite>
+        </figure>
+        <figure class="depo" style="margin:0">
+          <blockquote>[Depoimento 2 — insira o texto aqui]</blockquote>
+          <cite>— [Nome ou iniciais]</cite>
+        </figure>
+        <figure class="depo" style="margin:0">
+          <blockquote>[Depoimento 3 — insira o texto aqui]</blockquote>
+          <cite>— [Nome ou iniciais]</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ONDE ATENDO E HORÁRIOS -->
+  <section class="onde" id="onde">
+    <div class="wrap">
+      <p class="rotulo">Onde atendo</p>
+      <h2>Dois endereços, o mesmo critério</h2>
+      <div class="divisor" aria-hidden="true"><span class="losango"></span></div>
+      <div class="locais-grid">
+        <div class="local">
+          <h3>Barra da Tijuca</h3>
+          <p>Rio de Janeiro · RJ</p>
+        </div>
+        <div class="local">
+          <h3>Nova Iguaçu</h3>
+          <p>Baixada Fluminense · RJ</p>
+        </div>
+      </div>
+      <p class="nota">Atendimento somente com hora marcada. Dias, horários e endereço são informados no agendamento pelo WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- 6. FECHAMENTO -->
+  <section class="fechamento" id="agendar">
+    <div class="wrap">
+      <div class="assinatura centro" aria-hidden="true"><span class="losango"></span></div>
+      <h2>Vamos conversar sobre o seu rosto?</h2>
+      <p>A avaliação é o primeiro passo: um momento para entender o que você busca e o que é indicado para você.</p>
+      <a class="btn btn-claro" href="https://wa.me/5521969547637?text=Ol%C3%A1%2C%20Dra.%20Carolina!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-whats"/></svg>
+        Agendar avaliação pelo WhatsApp
+      </a>
+      <p class="cro">Dra. Carolina Marinho · CRO-RJ 54256</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Dra. Carolina Marinho · Cirurgiã-dentista · CRO-RJ 54256</p>
+    <p>Instagram: <a href="https://www.instagram.com/dracarolmarinhom/" target="_blank" rel="noopener">@dracarolmarinhom</a></p>
+  </div>
+</footer>
+
+<!-- Botão fixo de WhatsApp -->
+<a class="whats-fixo" href="https://wa.me/5521969547637?text=Ol%C3%A1%2C%20Dra.%20Carolina!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Agendar avaliação pelo WhatsApp">
+  <svg aria-hidden="true"><use href="#i-whats"/></svg>
+  Agendar
+</a>
+
+</body>
+</html>
