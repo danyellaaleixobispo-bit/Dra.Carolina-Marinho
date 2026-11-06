@@ -48,24 +48,25 @@
   .divisor::before,.divisor::after{content:"";flex:1;height:1px;background:var(--salvia)}
 
   /* Botões */
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 28px;border-radius:999px;font-family:var(--sans);font-weight:500;font-size:.95rem;letter-spacing:.02em;text-decoration:none;background:var(--tinta);color:var(--alabastro);transition:opacity .2s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 30px;border-radius:999px;font-family:var(--sans);font-weight:500;font-size:.88rem;letter-spacing:.06em;white-space:nowrap;text-decoration:none;background:var(--tinta);color:var(--alabastro);transition:opacity .2s}
   .btn:hover{opacity:.88}
   .btn:focus-visible,.whats-fixo:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
-  .btn svg{width:20px;height:20px;flex:none}
+  .btn svg{width:18px;height:18px;flex:none}
   .btn-claro{background:var(--alabastro);color:var(--tinta)}
 
   /* 1. Topo */
-  .topo{padding:56px 0 72px;min-height:88vh;min-height:88svh;display:flex;align-items:center}
-  .monograma{width:96px;height:auto;margin:0 0 28px}
-  .logo-final{width:200px;height:auto;margin:0 auto 36px}
-  .topo h1{font-size:clamp(2.3rem,9vw,3.6rem);margin-bottom:12px}
-  .topo .frase{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,4.6vw,1.45rem);line-height:1.45;max-width:30ch;margin:20px 0 32px}
-  .topo .locais{font-size:.9rem;color:var(--salvia-escura);margin:18px 0 0}
-  .topo .cro{font-size:.82rem;color:var(--salvia-escura);margin-top:6px}
+  .topo{padding:44px 0 0;text-align:center;background:linear-gradient(180deg,var(--alabastro) 0%,var(--alabastro) 55%,var(--nevoa) 100%)}
+  .monograma{width:72px;height:auto;margin:0 auto 26px}
+  .topo .rotulo{margin-bottom:12px}
+  .topo h1{font-size:clamp(1.9rem,8.4vw,3.2rem);letter-spacing:.01em;margin-bottom:0}
+  .filete{width:48px;height:1px;background:var(--salvia);margin:22px auto}
+  .topo .frase{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,4.4vw,1.3rem);line-height:1.55;color:var(--salvia-escura);max-width:26ch;margin:0 auto 30px}
+  .topo .meta{font-size:.78rem;letter-spacing:.08em;color:var(--salvia-escura);margin:18px 0 0;line-height:1.9}
+  .foto-arco{margin:40px auto 0;width:min(78%,340px);aspect-ratio:4/5;border-radius:999px 999px 0 0;overflow:hidden;background:var(--nevoa)}
+  .foto-arco img{width:100%;height:100%;object-fit:cover}
 
   /* 2. Sobre */
-  .sobre{border-top:1px solid var(--salvia)}
-  .sobre-grid{display:grid;gap:36px}
+    .sobre-grid{display:grid;gap:36px}
   .foto{background:var(--nevoa);aspect-ratio:4/5;overflow:hidden;max-width:420px}
   .foto img{width:100%;height:100%;object-fit:cover}
   h2{font-size:clamp(1.7rem,6.5vw,2.3rem)}
@@ -97,7 +98,7 @@
   .fechamento{background:var(--tinta);color:var(--alabastro);text-align:center;padding:72px 0}
   .fechamento h2{margin-bottom:16px}
   .fechamento p{max-width:34ch;margin:0 auto 32px}
-  .fechamento .cro{color:var(--ouro);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin:28px 0 0}
+  .fechamento .cro{color:var(--ouro);font-size:.74rem;letter-spacing:.18em;line-height:2;text-transform:uppercase;max-width:none;margin:32px auto 0;text-align:center}
 
   footer{background:var(--tinta);color:var(--alabastro);border-top:1px solid var(--salvia-escura);padding:28px 0 110px;font-size:.8rem;text-align:center}
   footer p{margin:0 0 6px}
@@ -130,16 +131,19 @@
   <!-- 1. TOPO -->
   <header class="topo">
     <div class="wrap">
-      <img class="monograma" src="imagens/monograma-cm.png" alt="" width="360" height="343" fetchpriority="high">
-      <p class="rotulo">Cirurgiã-dentista · Harmonização Orofacial</p>
+      <img class="monograma" src="imagens/monograma-cm.png" alt="" width="360" height="343">
+      <p class="rotulo">Harmonização Orofacial</p>
       <h1>Dra. Carolina Marinho</h1>
+      <div class="filete" aria-hidden="true"></div>
       <p class="frase">Critério antes de procedimento — cada rosto, uma leitura própria.</p>
       <a class="btn" href="https://wa.me/5521969547637?text=Ol%C3%A1%2C%20Dra.%20Carolina!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
         <svg aria-hidden="true"><use href="#i-whats"/></svg>
-        Agendar avaliação pelo WhatsApp
+        Agendar avaliação
       </a>
-      <p class="locais">Atendimento na Barra da Tijuca e em Nova Iguaçu</p>
-      <p class="cro">CRO-RJ 54256</p>
+      <p class="meta">Barra da Tijuca · Nova Iguaçu<br>Cirurgiã-dentista · CRO-RJ 54256</p>
+      <figure class="foto-arco">
+        <img src="imagens/carolina-sorriso.jpg" alt="Dra. Carolina Marinho sorrindo em seu consultório" width="800" height="1000" fetchpriority="high" decoding="async">
+      </figure>
     </div>
   </header>
 
@@ -148,7 +152,7 @@
     <div class="wrap sobre-grid">
       <figure class="foto" style="margin:0">
         <!-- Troque pelo arquivo da foto em /imagens (formato retrato, 4:5, até ~200 KB) -->
-        <img src="imagens/carolina.jpg" alt="Dra. Carolina Marinho em seu consultório" width="800" height="1000" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        <img src="imagens/carolina-cafe.jpg" alt="Dra. Carolina Marinho tomando café em seu consultório" width="800" height="1000" loading="lazy" decoding="async" onerror="this.style.display='none'">
       </figure>
       <div>
         <p class="rotulo">Sobre</p>
@@ -225,9 +229,9 @@
       <p>A avaliação é o primeiro passo: um momento para entender o que você busca e o que é indicado para você.</p>
       <a class="btn btn-claro" href="https://wa.me/5521969547637?text=Ol%C3%A1%2C%20Dra.%20Carolina!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
         <svg aria-hidden="true"><use href="#i-whats"/></svg>
-        Agendar avaliação pelo WhatsApp
+        Agendar avaliação
       </a>
-      <p class="cro">Dra. Carolina Marinho · CRO-RJ 54256</p>
+      <p class="cro">Dra. Carolina Marinho<br>CRO-RJ 54256</p>
     </div>
   </section>
 
@@ -235,7 +239,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Dra. Carolina Marinho · Cirurgiã-dentista · CRO-RJ 54256</p>
+    <p>Dra. Carolina Marinho · Cirurgiã-dentista<br>CRO-RJ 54256</p>
     <p>Instagram: <a href="https://www.instagram.com/dracarolmarinhom/" target="_blank" rel="noopener">@dracarolmarinhom</a></p>
   </div>
 </footer>
